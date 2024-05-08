@@ -30,7 +30,7 @@ public class VehicleDeshboard extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
@@ -229,16 +229,16 @@ public class VehicleDeshboard extends javax.swing.JFrame {
 
         pack();
         setLocationRelativeTo(null);
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // TODO add your handling code here:
         MainDashboard md=new MainDashboard();
         md.setVisible(true);
         VehicleDeshboard.this.dispose();
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }                                        
 
-    private void jButtonaddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonaddActionPerformed
+    private void jButtonaddActionPerformed(java.awt.event.ActionEvent evt) {                                           
         try {
             // TODO add your handling code here:
             Class.forName("com.mysql.cj.jdbc.Driver");
@@ -267,9 +267,9 @@ public class VehicleDeshboard extends javax.swing.JFrame {
         } catch (SQLException ex) {
             Logger.getLogger(VehicleDeshboard.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }//GEN-LAST:event_jButtonaddActionPerformed
+    }                                          
 
-    private void jButtonmodifyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonmodifyActionPerformed
+    private void jButtonmodifyActionPerformed(java.awt.event.ActionEvent evt) {                                              
        DefaultTableModel df=(DefaultTableModel) jTable1.getModel();
        int selectedIndex=jTable1.getSelectedRow();
         try {
@@ -300,9 +300,9 @@ public class VehicleDeshboard extends javax.swing.JFrame {
                 Logger.getLogger(VehicleDeshboard.class.getName()).log(Level.SEVERE, null, ex);
             }
             
-    }//GEN-LAST:event_jButtonmodifyActionPerformed
+    }                                             
 
-    private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
+    private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {                                     
         // TODO add your handling code here:
         DefaultTableModel df=(DefaultTableModel) jTable1.getModel();
         int selectedIndex=jTable1.getSelectedRow();
@@ -310,9 +310,9 @@ public class VehicleDeshboard extends javax.swing.JFrame {
         jTextFieldcapacity.setText((String) df.getValueAt(selectedIndex, 2));
         jTextFieldvtype.setText((String) df.getValueAt(selectedIndex, 3));
         jTextFieldregno.setText((String) df.getValueAt(selectedIndex, 4));
-    }//GEN-LAST:event_jTable1MouseClicked
+    }                                    
 
-    private void jButtondeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtondeleteActionPerformed
+    private void jButtondeleteActionPerformed(java.awt.event.ActionEvent evt) {                                              
         // TODO add your handling code here:
         DefaultTableModel df=(DefaultTableModel) jTable1.getModel();
        int selectedIndex=jTable1.getSelectedRow();
@@ -346,15 +346,15 @@ public class VehicleDeshboard extends javax.swing.JFrame {
             } catch (SQLException ex) {
                 Logger.getLogger(VehicleDeshboard.class.getName()).log(Level.SEVERE, null, ex);
             }
-    }//GEN-LAST:event_jButtondeleteActionPerformed
+    }                                             
 
-    private void jButtonclearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonclearActionPerformed
+    private void jButtonclearActionPerformed(java.awt.event.ActionEvent evt) {                                             
         // TODO add your handling code here:
         jTextFieldvname.setText(null);
         jTextFieldvtype.setText(null);
         jTextFieldcapacity.setText(null);
         jTextFieldregno.setText(null);
-    }//GEN-LAST:event_jButtonclearActionPerformed
+    }                                            
         private void table_update()
         {
             int c;
@@ -422,7 +422,7 @@ public class VehicleDeshboard extends javax.swing.JFrame {
         });
     }
 
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify                     
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButtonadd;
     private javax.swing.JButton jButtonclear;
@@ -441,5 +441,5 @@ public class VehicleDeshboard extends javax.swing.JFrame {
     private javax.swing.JTextField jTextFieldregno;
     private javax.swing.JTextField jTextFieldvname;
     private javax.swing.JTextField jTextFieldvtype;
-    // End of variables declaration//GEN-END:variables
+    // End of variables declaration                   
 }
